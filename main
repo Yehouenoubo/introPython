@@ -2,14 +2,15 @@
 #Créé le 13 Septembre 2022
 #Fonction qui compte le nombre de mots d'une chaîne de caractère
 
-def count_word():
 
-    #Je demande à l'utilisateur d'écrire une phrase
-    question1 = str(input("Écrivez une phrase:"))
+question1 = str(input("Écrivez une phrase:"))
+def count_word(phrase):
+
 
     #Ici je fait que le nombre de mots est compté dans la phrase
-    réponse = len(question1.split())
+    réponse = len(phrase.split())
 
-    print("Nombre de mots : ", str(réponse))
+    return(réponse)
+print(count_word(question1))
 
-count_word()
+
