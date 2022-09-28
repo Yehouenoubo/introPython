@@ -5,17 +5,19 @@
 #Je demande a l'utilisateur d'écrire une phrase
 question1 = str(input("Écrivez une phrase:"))
 
-
+#Ma fonction prend une phrase comme input et renvoie le nombre de mots comme output
 def count_word(phrase):
 
 
     #Ici je fait que le nombre de mots est compté dans la phrase
     réponse = len(phrase.split())
 
-    #Je retourne le nombre de mots
     return(réponse)
 
 #J'imprime le nombre le mots
-print(count_word(question1))
+
+nombre = count_word(question1)
+
+print(nombre)
 
 
